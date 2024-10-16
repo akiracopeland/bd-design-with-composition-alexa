@@ -17,7 +17,7 @@ class TranslatedAlexaQAClientTest {
     public void introspection_translatedAlexaQAClient_hasConstructorWithClient() {
         // GIVEN
         Class<?> translatedAlexaQAClientClass = getClassForName(
-                "com.amazon.ata.designcomposition.prework.TranslatedAlexaQAClient");
+                "com.amazon.ata.designcomposition.TranslatedAlexaQAClient");
 
         // WHEN
         Constructor<?> findBestAnswerMethod = null;
@@ -45,7 +45,7 @@ class TranslatedAlexaQAClientTest {
     public void introspection_translatedAlexaQAClient_hasFindBestAnswerAndTranslate() {
         // GIVEN
         Class<?> extendedAlexaQAClientClass = getClassForName(
-            "com.amazon.ata.designcomposition.prework.TranslatedAlexaQAClient");
+            "com.amazon.ata.designcomposition.TranslatedAlexaQAClient");
 
         // WHEN
         Method findBestAnswerAndTranslateMethod = null;
@@ -66,7 +66,7 @@ class TranslatedAlexaQAClientTest {
     public void introspection_translatedAlexaQAClient_isNotAlexaQAClient() {
         // GIVEN
         Class<?> extendedAlexaQAClientClass = getClassForName(
-            "com.amazon.ata.designcomposition.prework.TranslatedAlexaQAClient");
+            "com.amazon.ata.designcomposition.TranslatedAlexaQAClient");
 
         // WHEN
         boolean isAlexaQAClient = AlexaQAClient.class.isAssignableFrom(extendedAlexaQAClientClass);
